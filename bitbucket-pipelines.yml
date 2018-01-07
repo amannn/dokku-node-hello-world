@@ -19,8 +19,6 @@ pipelines:
   branches:
     master:
       - step:
-          caches:
-            - node
           script:
             # Add SSH keys for deployment
             - mkdir -p ~/.ssh

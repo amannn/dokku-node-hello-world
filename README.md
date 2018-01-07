@@ -38,7 +38,7 @@ If the app has private dependencies e.g. from Bitbucket, setup ssh keys:
 
 1. Install [dokku-deployment-keys](https://github.com/cedricziel/dokku-deployment-keys). If the generated public key isn't printed, look it up under `/home/dokku/.deployment-keys/shared/.ssh/id_rsa.pub`.
 2. Add the public key to a Bitbucket user that has access to the used repositories (usually a dedicated build user).
-2. Install [dokku-hostkeys](https://github.com/cedricziel/dokku-hostkeys-plugin) and `dokku hostkeys:shared:autoadd bitbucket.org`.
+2. Install [dokku-hostkeys](https://github.com/cedricziel/dokku-hostkeys-plugin) and run `dokku hostkeys:shared:autoadd bitbucket.org`.
 3. Login as the `dokku` user and verify the app can be cloned and its dependencies installed. If there are issues, [generate an ssh key manually](https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html#SetupanSSHkey-ssh2) and try again. After this, copy the key pair to `.deployment-keys/shared/.ssh/` and the `known_hosts` file to `.hostkeys/shared/.ssh/`.
 
 ## Deploy
