@@ -7,10 +7,10 @@
 ### App
 
 1. Ensure the app meets these requirements:
-  1. The app accepts `process.env.PORT`
-  2. If the app has a build step, specify it in [`app.json`](./app.json)
-  3. If the app has private dependencies, specify them using the syntax `"dependency-name": "git+ssh://git@bitbucket.org:organization/repository.git#tag"`.
-  4. The default node buildpack will specify `NODE_ENV=production` by default. If you need a different environment for a specific task (e.g. `npm run test`), specify it explicitly in the respective npm script (e.g. `NODE_ENV=test npm run test`).
+   1. The app accepts `process.env.PORT`
+   2. If the app has a build step, specify it in [`app.json`](./app.json)
+   3. If the app has private dependencies, specify them using the syntax `"dependency-name": "git+ssh://git@bitbucket.org:organization/repository.git#tag"`.
+   4. The default node buildpack will specify `NODE_ENV=production` by default. If you need a different environment for a specific task (e.g. `npm run test`), specify it explicitly in the respective npm script (e.g. `NODE_ENV=test npm run test`).
 2. `git remote add dokku dokku@dokku-host:node-app`
 
 This repository contains an app that meets these requirements (but has no private dependencies).
