@@ -1,6 +1,6 @@
 # dokku-node-hello-world
 
-> An instruction on how to deploy a node app to a server that is running [dokku](http://dokku.viewdocs.io/dokku/).
+> An instruction on how to deploy a node app to a server that is running [dokku](https://dokku.com/).
 
 ## Setup
 
@@ -17,7 +17,7 @@ This repository contains an app that meets these requirements (but has no privat
 
 ### Dokku host
 
-First [install dokku](http://dokku.viewdocs.io/dokku/getting-started/installation/).
+First [install dokku](https://dokku.com/docs/getting-started/installation/).
 
 Then:
 
